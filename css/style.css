@@ -6,9 +6,10 @@
 }
 
 .outshell {
-    width: 1290px;
+    max-width: 1290px;
     background-color: black;
     margin: auto;
+    
 }
 
 /*******HEADER******/
@@ -64,21 +65,25 @@ header button {
 /******USERS SECTION******/
 
 .users-container {
-    width: calc(100% - (75px * 2));
+    max-width: calc(100% - (75px * 2));
     height: 100%;
-    margin:auto;
+    margin: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-content: flex-start;
+    overflow: hidden;
 }
 .user-box {
     width: calc(100% / 5);
     min-width: 200px;
+    max-width: 250px;
+    flex-shrink: 0;
     height: calc(100% / 5);
-    background-color: violet;
+    min-height: 100px;
     border: 3px solid black;
-    position:relative;
+    position: relative;
+   
 }
 
 img {
@@ -108,7 +113,7 @@ footer {
 .footer-container{
     display: flex;
     justify-content: space-between;
-    height: 56px;
+    height: 54px;
     align-items: center;
 }
 
@@ -116,16 +121,11 @@ footer {
    padding-left: 10px;
 }
 
-.footer-function-2 {
-
-}
-
 footer .btn-complete {
     display: inline-block;
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
-
 }
 
 footer .fas {
@@ -148,7 +148,6 @@ footer .function-btn-description {
     font-size: 13px;
 }
 
-
 footer .end-meeting {
     color: red;
     background-color: #494B4D;
@@ -157,6 +156,7 @@ footer .end-meeting {
     padding-left: 10px;
     border: none;
 }
+
 .relative {
     position: relative;
 }
