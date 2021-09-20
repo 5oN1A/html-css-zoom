@@ -32,9 +32,20 @@ header button {
 
 .main-container {
     height: calc(100vh - (56px + 45px));
+    position: relative;
 }
 
 /******PAGINATION*****/
+.pagination {
+    position: absolute;
+    top: 50%;
+    transform: tr;
+}
+
+.pagination-right {
+    right: 0;
+}
+
 .pagination .fas {
     color: #7F7F7F;
     font-size: 40px;
@@ -49,6 +60,7 @@ header button {
 
 .users-container {
     width: calc(100% - (75px * 2));
+    height: 100%;
     margin:auto;
     border: 1px solid white;
     display: flex;
@@ -56,7 +68,7 @@ header button {
 }
 .user-box {
     width: calc(100% / 5);
-    min-height: 100px;
+    height: calc(100% / 5);;
     background-color: violet;
     border: 8px solid white;
 
