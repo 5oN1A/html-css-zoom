@@ -16,7 +16,7 @@
 .header-container {
     text-align: right;
     padding-right: 10px;
-    height: 45px;
+    min-height: 45px;
 }
 
 header button {
@@ -31,24 +31,29 @@ header button {
 /*******MAIN******/
 
 .main-container {
-    height: calc(100vh - (56px + 45px));
+    height: calc(100vh - (56px + 45px)); 
     position: relative;
+    padding-bottom: 50px;
 }
 
 /******PAGINATION*****/
 .pagination {
     position: absolute;
     top: 50%;
-    transform: tr;
+    transform: translateY(-50%);
+}
+
+.pagination-left {
+    left: 20px;
 }
 
 .pagination-right {
-    right: 0;
+    right: 20px;
 }
 
 .pagination .fas {
     color: #7F7F7F;
-    font-size: 40px;
+    font-size: 44px;
 }
 
 .pagination .page-nr  {
@@ -62,21 +67,116 @@ header button {
     width: calc(100% - (75px * 2));
     height: 100%;
     margin:auto;
-    border: 1px solid white;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    align-content: flex-start;
 }
 .user-box {
     width: calc(100% / 5);
-    height: calc(100% / 5);;
+    min-width: 200px;
+    height: calc(100% / 5);
     background-color: violet;
-    border: 8px solid white;
-
+    border: 3px solid black;
+    position:relative;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-details {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, .3);
+    padding: 2px;
+
+}
 /*****FOOTER*****/
 
 footer {
-    height: 56px;
     background-color: #1F2123;
+    color: #DCDCDC;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    align-items: center;
+}
+
+.footer-functions-1 {
+   padding-left: 10px;
+}
+
+.footer-function-2 {
+
+}
+
+footer .btn-complete {
+    display: inline-block;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+footer .fas {
+    display: block;
+    font-size: 25px;
+    padding-bottom: 2px;
+}
+
+footer .fa-chevron-up {
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: super;
+}
+
+.fa-chevron-up:before {
+    padding-bottom: 20px;
+}
+
+footer .function-btn-description {
+    font-size: 13px;
+}
+
+
+footer .end-meeting {
+    color: red;
+    background-color: #494B4D;
+    height: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: none;
+}
+.relative {
+    position: relative;
+}
+
+.small-28 {
+    font-size: 14px;
+    position:absolute;
+    top: 0;
+    right: 40px;
+}
+
+.green {
+    color: greenyellow;
+}
+
+.small-chevron:before {
+    font-size: 8px;
+}
+.small-chevron {
+    position:absolute;
+    top: 12px;
+    right: 15px;
 }
